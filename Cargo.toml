@@ -1,0 +1,11 @@
+[package]
+name = "static-include-bytes"
+version = "1.0.0"
+edition = "2021"
+
+authors = ["summivox <summivox@gmail.com>"]
+description = "Like the built-in `include_bytes!` macro but produces a static array definition."
+repository = "https://github.com/summivox/static-include-bytes-rs"
+categories = ["rust-patterns", "no-std", "embedded"]
+keywords = ["macro"]
+license = "MIT"
