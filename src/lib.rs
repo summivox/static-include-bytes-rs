@@ -1,5 +1,5 @@
 #![no_std]
-#![doc = "../README.md"]
+#![doc = include_str!("../README.md")]
 
 /// Inserts a static byte array definition with both its content and length loaded from a file at
 /// compile time. `static_include_bytes!(NAME, PATH)` is semantically equivalent to
