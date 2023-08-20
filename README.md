@@ -10,7 +10,7 @@ Like the built-in `include_bytes!` macro, but produces a static array definition
 ```rust
 use static_include_bytes::static_include_bytes;
 
-static_include_bytes!(TEN_BYTES, concat!(env!("CARGO_MANIFEST_DIR"), "/ten_bytes.bin"));
+static_include_bytes!(#[no_mangle] TEN_BYTES = concat!(env!("CARGO_MANIFEST_DIR"), "/ten_bytes.bin"));
 
 assert_eq!(TEN_BYTES.len(), 10);
 assert_eq!(&TEN_BYTES, b"0123456789");
